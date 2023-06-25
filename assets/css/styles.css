@@ -457,6 +457,17 @@ img {
   .contact__container {
     justify-items: center;
   }
+
+  .contact__social-icon i {
+    font-size: 50px; /* تغيير حجم الأيقونات */
+}
+
+.contact__social-icon {
+  margin-right: 40px; /* تحديد المسافة الأفقية بين الأيقونات */
+  display: inline-block; /* تحويل الأيقونات إلى عناصر متباعدة أفقيًا */
+}
+
+
 }
 
 @media screen and (min-width: 768px) {
