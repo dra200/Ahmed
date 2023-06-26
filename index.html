@@ -30,6 +30,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -43,6 +44,20 @@
 
 
         <main class="l-main">
+            <audio id="myAudio">
+                <source src="assets/audio/zwf-Ladies_and_Gentlemen.wav" type="audio/wav">
+              </audio>
+              
+              <script>
+                // انتظر تحميل المستند بالكامل
+                document.addEventListener('DOMContentLoaded', function() {
+                  // حدد عنصر الصوت
+                  var audio = document.getElementById('myAudio');
+                  // تشغيل الصوت
+                  audio.play();
+                });
+              </script>
+            
             <!--===== HOME =====-->
             <style>
                 .home__img {
@@ -54,7 +69,7 @@
                 <!--===== HOME =====-->
                 <section class="home bd-grid" id="home">
                     <div class="home__data">
-                        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ahmed</span><br> GIS Developer </h1>
+                        <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Ahmed</span><br> GIS Developer </h1>
                         <a href="mailto:ahmedpc2017ss@gmail.com" class="button">Contact</a>
                         <a href="https://drive.google.com/file/d/1NXCzga-Q3CIxddIVK-izyfAHn70fqD5w/view?usp=drivesdk" class="button" download>Download CV</a>
                     </div>
@@ -73,7 +88,6 @@
                 </section>
             
                 
-
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
@@ -145,31 +159,98 @@
                     </div>
                 </div>
             </section>
+            <!--===== شهدات التقدير  =====-->
+            <section class="certificates section" id="certificates">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates__container bd-grid">
+                  <div class="certificate">
+                    <img src="assets/img/CERTIFICATE1.jpeg" alt="Certificate" class="certificate__img">
+                    <div class="certificate__overlay">
+                      <h3 class="certificate__title">Data analysis</h3>
+                      <p class="certificate__description">وIntroduction to data and data analysis is an introduction to data types and modeling methods</p>
+                    </div>
+                  </div>
+                  <div class="certificate">
+                    <img src="assets/img/CERTIFICATE2.jpeg" alt="Certificate" class="certificate__img">
+                    <div class="certificate__overlay">
+                      <h3 class="certificate__title">Get the data </h3>
+                      <p class="certificate__description">Ways to ask questions to obtain data that is useful and valuable for the project and to delve deeper into understanding the data</p>
+                    </div>
+                  </div>
+                  <div class="certificate">
+                    <img src="assets/img/cer3.jpg" alt="Certificate" class="certificate__img">
+                    <div class="certificate__overlay">
+                      <h3 class="certificate__title">Data analysis from the Ministry of Communications</h3>
+                      <p class="certificate__description">Methods of data analysis Data cleaning and restructuring</p>
+                    </div>
+                  </div>
+                  <div class="certificate">
+                    <img src="assets/img/cer4.jpg" alt="Certificate" class="certificate__img">
+                    <div class="certificate__overlay">
+                      <h3 class="certificate__title"> Database management</h3>
+                      <p class="certificate__description">Designing and understanding the mechanism of working and managing databases, knowing faults and maintaining it</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+
+
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
-
+            
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
+                    <a href="#" class="work__img">
                         <img src="assets/img/work1.jpg" alt="">
+                        <div class="work__img-overlay">
+                            <h3 class="work__img-title">Desertification Monitoring Project in Fayoum</h3>
+                            <p class="work__img-description">This is our main sample, which we used as a reference to determine desertification.</p>
+                        </div>
                     </a>
-                    <a href="" class="work__img">
+                    <a href="#" class="work__img">
                         <img src="assets/img/work2.jpg" alt="">
+                        <div class="work__img-overlay">
+                            <h3 class="work__img-title">Desertification Monitoring Project in Fayoum</h3>
+                            <p class="work__img-description">This image is for the year 2010, which is the average of the years to know the extent of the impact of desertification.</p>
+                        </div>
                     </a>
-                    <a href="" class="work__img">
+                    <a href="#" class="work__img">
                         <img src="assets/img/work33.jpg" alt="">
+                        <div class="work__img-overlay">
+                            <h3 class="work__img-title">Desertification Monitoring Project in Fayoum</h3>
+                            <p class="work__img-description">This image is in 2021, and the extent of the impact of desertification on the cultivated area and Lake Qarun was monitored using satellite visuals from the American Geological Survey.</p>
+                        </div>
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                </a>
+                <a href="#" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                    <div class="work__img-overlay">
+                        <h3 class="work__img-title">Faiyum Map </h3>
+                        <p class="work__img-description">Zoom in to the Faiyum region, which is located in the western Nile Valley.</p>
+                    </div>
+                </a>
+            </a>
+            <a href="#" class="work__img">
+                <img src="assets/img/work5.jpg" alt="">
+                <div class="work__img-overlay">
+                    <h3 class="work__img-title">project steps</h3>
+                    <p class="work__img-description">Here are the project steps and using the model in ArcGIS.</p>
+                </div>
+            </a>
+        </a>
+        <a href="#" class="work__img">
+            <img src="assets/img/work6.jpg" alt="">
+            <div class="work__img-overlay">
+                <h3 class="work__img-title">Atlantic coast</h3>
+                <p class="work__img-description">Using ArcGIS, earthquake zones are monitored on the Atlantic coast.</p>
+            </div>
+        </a>
+                    <!-- إضافة باقي الصور -->
                 </div>
             </section>
+            
+            
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
@@ -234,5 +315,13 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <script type="text/javascript"> //<![CDATA[
+            var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+            document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+          //]]></script>
+          <script language="JavaScript" type="text/javascript">
+            TrustLogo("https://www.positivessl.com/images/seals/positivessl_trust_seal_md_167x42.png", "POSDV", "none");
+          </script>
     </body>
 </html>
