@@ -545,8 +545,8 @@ img {
 
 .certificate {
   position: relative;
-  width: 410px;
-  height: 310px;
+  width: 310px;
+  height: 210px;
   margin: 20px;
   overflow: hidden;
 }
