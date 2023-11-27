@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #a6a6a6 url("assets/img/chess.jpg") center/cover no-repeat;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+    gap: 2px;
+    background-color: #d9d9d9; /* Lighter wood color */
+    border: 5px solid #b3b3b3; /* Darker wood color */
+    position: relative;
+}
+
+.square {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    color: #333;
+    user-select: none;
+}
+
+.square:nth-child(odd) {
+    background-color: #c2c2c2; /* Lighter color for odd squares */
+}
+
+.square:nth-child(even) {
+    background-color: #a6a6a6; /* Darker color for even squares */
+}
+
+.piece {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #f0f0f0; /* Lighter color for highlighting */
+    border: 2px solid #e0e0e0; /* Slightly darker border color */
+    box-sizing: border-box;
+    animation: highlight 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.instructions {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 20px;
+    background-color: #808080;
+    color: #fff;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.instructions p {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.instructions h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Enhance square hover effect */
+.square:hover {
+    background-color: #d9d9d9; /* Slightly darker wood color on hover */
+}
